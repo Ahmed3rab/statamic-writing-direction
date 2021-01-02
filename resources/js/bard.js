@@ -9,7 +9,6 @@ Statamic.$bard.buttons((buttons) => {
         text: "Left To Right",
         command: "writingDirection",
         args: { direction: "ltr" },
-        icon: "caret-right",
         component: WritingDirectionButton,
     });
     buttons.splice(indexOfBold + 2, 0, {
@@ -17,7 +16,6 @@ Statamic.$bard.buttons((buttons) => {
         text: "Right To Left",
         command: "writingDirection",
         args: { direction: "rtl" },
-        icon: "caret-left",
         component: WritingDirectionButton,
     });
 });

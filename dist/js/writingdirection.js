@@ -110,7 +110,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
 /* harmony default export */ __webpack_exports__["default"] = ({
   mixins: [BardToolbarButton],
   data: function data() {
@@ -162,7 +161,6 @@ var render = function() {
             _vm.getMarkAttrs("writingDirection").direction ===
             this.button.args.direction
         },
-        domProps: { innerHTML: _vm._s(_vm.button.html) },
         on: {
           click: function($event) {
             return _vm.setDirection()
@@ -170,7 +168,7 @@ var render = function() {
         }
       },
       [
-        _vm.getMarkAttrs("writingDirection").direction === "ltr"
+        this.button.args.direction === "ltr"
           ? _c(
               "svg",
               {
@@ -566,7 +564,6 @@ Statamic.$bard.buttons(function (buttons) {
     args: {
       direction: "ltr"
     },
-    icon: "caret-right",
     component: _WritingDirectionButton__WEBPACK_IMPORTED_MODULE_1__["default"]
   });
   buttons.splice(indexOfBold + 2, 0, {
@@ -576,7 +573,6 @@ Statamic.$bard.buttons(function (buttons) {
     args: {
       direction: "rtl"
     },
-    icon: "caret-left",
     component: _WritingDirectionButton__WEBPACK_IMPORTED_MODULE_1__["default"]
   });
 });
