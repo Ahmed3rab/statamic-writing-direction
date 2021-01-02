@@ -1,0 +1,55 @@
+{
+    "name": "ahmed3rab/statamic-writing-direction",
+    "description": "A Statamic addon to change writing direction of your bard fieldtype",
+    "keywords": [
+        "ahmed3rab",
+        "statamic",
+        "bard",
+        "rtl",
+        "writing-direction"
+    ],
+    "homepage": "https://github.com/ahmed3rab/statamic-writing-direction",
+    "support": {
+        "email": "info@optimoapps.com"
+    },
+    "type": "statamic-addon",
+    "license": "MIT",
+    "authors": [
+        {
+        "name": "Ahmed Arab",
+        "email": "ahmedmohamedarab@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Ahmed3rab\\StatamicWritingDirection\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Ahmed3rab\\StatamicWritingDirection\\Tests\\": "tests"
+        }
+    },
+    "require": {
+        "php": "^7.4",
+        "statamic/cms": "^3.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^6.0",
+        "phpunit/phpunit": "^9.5"
+    },
+    "extra": {
+        "statamic": {
+            "name": "Statamic Bard Writing Direction",
+            "description": "A Statamic addon to change writing direction of your bard fieldtype"
+        },
+        "laravel": {
+            "providers": [
+                "Ahmed3rab\\StatamicWritingDirection\\ServiceProvider"
+            ]
+        }
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
